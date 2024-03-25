@@ -1,0 +1,87 @@
+@import url("reset.css");
+
+
+/*
+*{
+    color:blue;
+}
+*/
+
+h1{
+    color: green;
+}
+
+h2{
+    color:red;
+}
+
+.intro{
+    color: lightblue;
+}
+
+#brown{
+    color: brown;
+}
+
+[class*="is"]{
+    color: green;
+}
+
+[href]{
+    color:blue;
+}
+
+div.revival{
+    color: lime;
+}
+
+div.influence{
+    color:purple;
+}
+
+.orange,
+.embroidery{
+    color: orange;
+}
+
+.purple,
+.items{
+    color: purple;
+}
+.techniques span{
+    color: magenta; 
+}
+
+.symbolism span{
+    color: aqua;
+}
+.conclusion span{
+    color: brown;
+}
+
+.heritage > p{
+    color: blueviolet;
+}
+
+.symbolism >ul{
+    color: lightseagreen
+}
+
+.conclusion + p{
+    color: brown;
+}
+
+
+.footer ~ div{
+    color: green;
+}
+
+
+
+
+
+
+
+
+
+
