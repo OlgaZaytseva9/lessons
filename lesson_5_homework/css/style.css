@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+@import url("reset.css");
+
+@import url("fonts.css");
+
+/*body{
+    font-family: "Quicksand";
+    font-weight: 600;
+    
+    font-size: 12px;
+    color: black;
+    }
+    
+.section{
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: blue;
+
+    }
+    
+.items{
+    margin: 0 -5px;
+    font-size: 0;
+   background-color: #ff0000da;
+
+}
+
+.item{
+    width: 33.3%;
+    display: inline-block;
+    margin-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: gray;
+
+}
+
+.content{
+    padding: 20px;
+    background-color: #fcc;
+    text-align: center;
+    font-size: 30px;
+}
+.article{
+    width: 500px;
+    height: 100px;
+    margin: 0 auto;
+    background-color: black;
+    
+}
+.yellow{
+    background-color: yellow;
+}
+.blue{
+    background-color: blue;
+}
+.green{
+    background-color: green;
+}
+.pink{
+    background-color: pink;
+}
+.brown{
+    background-color: brown;
+}
+*/
+
+/*Header*/
+/* .section{
+    width: 1920px;
+    height: 754px;
+    padding-top: 100px;
+    padding-right: 300px;
+    padding-left: 300px;
+    margin: 0 auto;
+}  */
+.container{
+    width: 1320px;
+    height: 319px;
+     margin: 0 auto;
+     margin-bottom: 100px;
+}
+
+
+h1{
+    font-family: roboto;
+    font-weight: 500;
+    font-size: 50px;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 60px;
+    }
+
+.items{
+    margin: 0 -12px;
+    font-size: 0;
+}
+
+.item{
+    width:16.66%;
+    padding: 12px;
+    display: inline-block;
+}
+
+.main{
+    width: 1070px;	
+    margin: 0 auto;
+    color: #2b2929;
+    font-family: 'Proxima Nova Rg', sans-serif;
+}
+
+.main h2{
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 120%;
+    margin-bottom: 40px;
+}
+
+.main h3{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 140%;
+    margin-bottom: 30px;
+}
+
+.main p,
+.main ul{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 187%;
+}
+.text > p{
+    margin-bottom: 20px;
+}
+
+.main img{
+    border-radius: 8px;
+    width: 1070px;
+    height: 380px;
+    margin-bottom: 40px;
+}
+.text{
+    padding-bottom: 40px;
+}
+
+.main ul li{
+    margin-bottom: 20px;
+    padding-left: 47px;
+}
+ .list{
+    margin-bottom: 40px;
+ }
+
+ .living-room > p{  
+    margin-bottom: 100px;
+ }
+
+ /*Footer, scrin N3*/
+ .footer-section{
+    width: 1290px;
+    height: 572px;
+    margin: 0 auto;
+    background-color: #f8f8f8;
+    font-size: 0;
+
+ }
+
+.footer h2{
+    color: #2b2929;
+    font-family: 'Proxima Nova Rg', sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 120%;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.footer-items{
+    margin: 0 -15px;
+    font-size: 0;
+}
+
+.footer-item{
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 15px;
+    width: 330px;
+    height: 484px;
+    text-align: center;
+}
+
+.footer-item h3{
+    color: #2b2929;
+    font-family: 'Proxima Nova Rg', sans-serif;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 131%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.footer-item p{
+    color: #2b2929;
+    font-family: 'Proxima Nova Rg', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 187%;
+    text-align: center;
+}
+
+.footer-item img{
+    width: 170px;
+    height: 170px;
+    margin-bottom: 20px;
+}
