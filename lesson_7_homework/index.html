@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 7 homework</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header block">
+        <h1>Lesson 7 homework</h1>
+        <h2>Outline</h2>
+        <ul class="main-list">
+            <li><a href="#pseudo-classes">Pseudo-classes</a></li>
+            <li>
+                <ul class="second-list">
+                    <li><a href="#action-pseudo-classes">User-action pseudo-classes</a></li>
+                    <li>
+                        <ul class="third-list">
+                            <li><a href="#hover">:hover</a></li>
+                            <li><a href="#active">:active</a></li>
+                            <li><a href="#visited">:visited</a></li>
+                            <li><a href="#focus">:focus</a></li>
+                            <li><a href="#focus-visible">:focus-visible</a></li>
+                            <li><a href="#target">:target</a></li>
+                        </ul>
+                    </li>
+                    <li class="second-list">Tree-structural pseudo-classes</li>
+                    <li>
+                        <ul class="third-list">
+                            <li><a href="#first-child">:first-child</a></li>
+                            <li><a href="#first-of-type">:first-of-type</a></li>
+                            <li><a href="#last-child">:last-child</a></li>
+                            <li><a href="#last-of-type">:last-of-type</a></li>
+                            <li><a href="#nth-child">:nth-child</a></li>
+                            <li><a href="#not">:not</a></li>
+                            <li><a href="#has">:has</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#game">Game</a></li>
+            <li><a href="#aboutme">About me</a></li>
+            <li><a href="#living-room">Living room</a></li>
+
+        </ul>
+    </header>
+
+    <main class="main block">
+        <h2 id="pseudo-classes">Pseudo-classes</h2>
+        <h3 id="action-pseudo-classes">User-action pseudo-classes</h3>
+        <h4 id="hover">:hover</h4>
+        <a href="#" class="button button-1">Link</a>
+        <a href="#" class="button button-2"><span>Shop now</span></a>
+        <a href="#" class="button button-3"><span>Click me!</span></a>
+        <p class=button-1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, eius voluptas
+            non debitis eligendi quo!</p>
+        <div class="hydrangea">
+            <a class="hydrangea-link" href="#">Click here!</a>
+            <img class="hydrangea-image" src="img/hydrangea.jpg" alt="blue hydrangea flowers">
+        </div>
+
+        <h4 id="active">:active</h4>
+        <a href="#" class="button button-4">Download</a>
+        <a href="#" class="button button-5"><span>Read more</span></a>
+        <p class=active-p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, eius
+            voluptas
+            non debitis eligendi quo!</p>
+
+        <h4 id="visited">:visited</h4>
+
+        <a href="https://www.google.com/" target="_blank" class="visited-link-1">Link to the
+            website</a>
+        <a href="https://www.ebay.com/" target="_blank" class="visited-link-2">Link to the
+            shop</a>
+
+        <h4 id="focus">:focus</h4>
+        <a href="https://www.google.com/" target="_blank" class="focus-link-1">Link to the
+            website</a>
+        <a href="https://www.google.com/" target="_blank" class="focus-link-1">Link to the
+            website</a>
+        <a href="https://www.google.com/" target="_blank" class="focus-link-1">Link to the
+            website</a>
+
+        <h4 id="focus-visible">:focus-visible</h4>
+        <a href="https://www.google.com/" target="_blank" class="focus-visible-link-1">Download</a>
+        <a href="https://www.google.com/" target="_blank" class="focus-visible-link-1">Download</a>
+        <a href="https://www.google.com/" target="_blank" class="focus-visible-link-1">Download</a>
+
+        <h4 id="target">:target</h4>
+        <a href="#target-text" class="target-link">Link to text</a>
+        <div class="target-text" id="target-text">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque molestias rerum, qui
+                aperiam aliquid voluptas nobis quo, fugiat temporibus cupiditate eveniet incidunt
+                fuga corporis. Incidunt mollitia qui autem ipsum inventore.</p>
+        </div>
+
+        <h3 id="structural-pseudo-classes">Tree-structural pseudo-classes</h3>
+
+        <div class="first-child" id="first-child">
+            <h4>:first-child</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, dolore!</p>
+            <a href="#">Link to the shop</a>
+            <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus tempore, veniam quidem quae
+                perferendis nesciunt?</span>
+        </div>
+        <div class="first-of-type" id="first-of-type">
+            <h4>:first-of-type</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, dolore!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, dolore!</p>
+            <a href="#">Link to the shop</a>
+            <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus tempore, veniam quidem quae
+                perferendis nesciunt?</span>
+        </div>
+        <div class="last-child" id="last-child">
+            <h4>:last-child</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, dolore!</p>
+            <a href="#">Link to the shop</a>
+            <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus tempore, veniam quidem quae
+                perferendis nesciunt?</span>
+        </div>
+        <div class="last-of-type" id="last-of-type">
+            <h4>:last-of-type</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, dolore!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, dolore!</p>
+            <a href="#">Link to the shop</a>
+            <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus tempore, veniam quidem quae
+                perferendis nesciunt?</span>
+        </div>
+        <div class="nth-child" id="nth-child">
+            <h4>:nth-child</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, dolore!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, dolore!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, dolore!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, dolore!</p>
+        </div>
+
+        <div class="not" id="not">
+            <h4>:not</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, dolore!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, dolore!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, dolore!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, dolore!</p>
+        </div>
+
+        <div class="has" id="has">
+            <h4>:has</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, <a href="#">Link</a> dolore!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, dolore!</p>
+        </div>
+
+        <h2>Pseudo-elements</h2>
+        <h4 id="before">::before</h4>
+        <div class="before-after">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet sint commodi laboriosam ea neque placeat
+            consequatur, molestias sapiente veritatis, sequi dolorum laborum, harum in explicabo.
+        </div>
+        <ul class="fourth-list">
+            <li class="list-item">Some text</li>
+            <li class="list-item">Some text</li>
+            <li class="list-item">Some text</li>
+        </ul>
+        <div class="game" id="game">
+            <div class="game-wrapper">
+                <h2>Game</h2>
+                <div class="game-block-1"></div>
+                <div class="game-block-2"></div>
+                <div class="game-block-3"></div>
+                <div class="game-block-4"></div>
+            </div>
+        </div>
+
+    </main>
+    <div class="aboutme" id="aboutme">
+        <div class="aboutme_box">
+            <h2>About me</h2>
+            <p class="me">Welcome to the cinematic realm of Jimmy, where creativity meets technology to craft visually
+                stunning
+                narratives. With a
+                passion for storytelling and a keen eye for detail, I embark on a journey to transform ordinary footage
+                into
+                extraordinary visual experiences.</p>
+
+            <ul class="about_list">
+                <li class="about_item">Cash cow editing</li>
+                <li class="about_item">Reels editng</li>
+                <li class="about_item">logo animation</li>
+                <li class="about_item">podcast edit</li>
+            </ul>
+            <div class="contacts">
+                <p class="call">+92 455 478 112</p>
+                <p class="location">Defense Phase 3, Lahore Pakistan</p>
+                <p class="email">videoeditor@gmail.com</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="living-room-block" id="living-room">
+        <div class="living-room">
+            <h2>
+                Оформлення вітальні. Які м'які меблі краще вибрати?
+            </h2>
+            <img src="img/couch.jpg" alt="living room with couh and armchair">
+            <div class="text">
+                <p>
+                    Вітальня – це основна кімната у кожному будинку. Саме вона служить для прийому гостей, проведення
+                    часу
+                    всією сім'єю та
+                    просто для відпочинку у приємній теплій атмосфері. Оформляючи свій будинок та вітальню зокрема, всі
+                    намагаються зробити
+                    її максимально зручною, комфортною та красивою. Основним та центральним елементом оформлення
+                    вітальні,
+                    як і будь-якої
+                    іншої кімнати, є м'які меблі.
+                </p>
+                <p>
+                    Будь-які меблі для вітальні повинні бути не тільки стильними і красивими, але і функціональними. На
+                    таких меблів має
+                    бути зручно та приємно відпочивати та приймати гостей. Однак сьогодні існує величезна
+                    різноманітність
+                    найрізноманітніших
+                    м'яких меблів для вітальні, яка підходить для кімнат різних розмірів і форм. На чому варто зупинити
+                    свій
+                    вибір? Як краще
+                    оформити свою вітальню, щоб вам було комфортно, а гості хотіли приходити до вас знову та знову?
+                </p>
+            </div>
+            <h3>
+                На сайті інтернет магазину Кровато представлено велику різноманітність м'яких меблів для вітальні, серед
+                яких кожен
+                зможе вибрати для себе найбільш вдалий варіант. У нас ви знайдете:
+            </h3>
+            <div class="list">
+                <ul>
+                    <li class="living-room-item">
+                        Прямі дивани. Такі дивани вважаються класикою. Вони підходять для віталень будь-яких форм та
+                        розмірів. Прямий диван
+                        виглядає стильно та лаконічно, на ньому зручно відпочивати, приймати гостей або навіть спати.
+                        Прямі
+                        дивани можуть стояти
+                        біля стіни, так і в центрі кімнати. Багато моделей прямих диванів легко розкладаються,
+                        перетворюючись на повноцінне
+                        спальне місце. Також більшість диванів мають великі та місткі ніші, які є додатковим місцем для
+                        зберігання;
+
+                    </li>
+                    <li class="living-room-item">
+                        Кутові дивани Кутові дивани вважаються найзручнішими та комфортнішими. Вони ідеально підійдуть
+                        для
+                        приємного проведення
+                        часу в колі сім'ї або друзів. Кутові дивани в основному використовуються для оформлення великих
+                        віталень, так як вони
+                        займають багато місця, і для кімнат з невеликою площею просто не підійдуть;
+                    </li>
+                    <li class="living-room-item">
+                        Тахти. Тахта - це одна з варіацій дивана, але стильніша і мінімалістична. Виглядають тахти дуже
+                        незвично і можуть
+                        підійти для будь-якого інтер'єру. Також тахти більше ніж звичайні дивани підходять для сну,
+                        оскільки
+                        в їх основі не
+                        пружинні блоки, а дерев'яні ламелі або ортопедичні матраци;
+
+                    </li>
+                    <li class="living-room-item">
+                        Крісла. Крісло – це особливий предмет інтер'єру. Сучасні дизайнери не часто використовують його,
+                        вважаючи застарілим,
+                        проте саме крісла створюють особливий затишок та комфорт у будь-якій кімнаті. Сьогодні існує
+                        величезна різноманітність
+                        класичних та сучасних моделей крісел, що дозволяє кожному відшукати ідеальне крісло для свого
+                        будинку;
+                    </li>
+                    <li class="living-room-item">
+                        Набір меблів. Комплект м'яких меблів – це відмінне рішення для тих, хто хоче меблювати свою
+                        вітальню
+                        не лише диваном, а
+                        й кріслами. Існують набори з одним або двома кріслами, із прямими або кутовими диванами. Основна
+                        перевага будь-якого
+                        готового меблевого гарнітура – це те, що предмети меблів у ньому ідеально поєднуються один з
+                        одним,
+                        і вам не потрібно
+                        буде витрачати свій час та сили на їхній підбір.
+                    </li>
+                </ul>
+
+                <p>
+                    Підбір м'яких меблів для вітальні – це заняття непросте. Однак при виборі та покупці меблів для
+                    своєї вітальні
+                    пам'ятайте, що якісні м'які меблі повинні бути не тільки красивими, але й зручними для вас і всіх
+                    мешканців вашого
+                    будинку.
+                </p>
+
+
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+    <footer class="footer">
+
+    </footer>
+
+</body>
+
+</html>
