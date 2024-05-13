@@ -139,7 +139,7 @@ body{
     padding-left: 38px;
 }
 
-.sub-menu_item:hover {
+.sub-menu__item:hover {
     background-color: #ffbc57;
 }
 .sub-menu__link {
