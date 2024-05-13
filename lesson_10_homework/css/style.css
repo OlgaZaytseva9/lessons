@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+@import url("reset.css"); 
+
+@import url("fonts.css");
+body{
+    background-color: #ccc;
+
+}
+
+ .wrapper{
+    min-height: 100%;
+    overflow: clip;
+ }
+
+ .header{
+    background-color: #fff;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.button {
+    background-color:  #ffbc57;
+    padding: 11px 20px 11px 54px;
+    font-family: "Proxima Nova", sans-serif;
+    color: #fff;
+    font-weight: 600;
+    font-size: 19px;
+    line-height: 126%;
+    border-radius: 8px;
+    position: relative;
+    top:50 px;
+    left: 200px;
+    background: url(../img/close-catalog.svg) 20px 11px  no-repeat  #ffbc57;
+
+}
+
+.button:focus+.menu{
+    display: block;
+}
+.button__text {
+}
+.menu {
+    background-color: #fff;
+    border-radius: 8px;
+    position: absolute;
+    top: 130%;
+    left: 10%;
+    max-width: 623px;
+    width: 100%;
+    min-height: 616px;
+    padding-top: 8px;
+    white-space: nowrap;
+    display: none;
+    /* font-size: 0; */
+    z-index: 2;
+
+
+}
+
+.menu__list {
+   /* font-size: 0; *//*пропадает sub-menu*/
+
+}
+
+.menu__item {    
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    max-width: 300px;
+    background-color: #fff;
+
+}
+
+.menu__link{
+    /* font-size: 0; */
+    white-space: nowrap; 
+}     
+
+.menu__item:hover {
+    background-color: #ffbc57;
+}
+
+.menu__icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+    display: inline-block;  
+}
+
+.menu__text {
+    max-width: 161px;  
+    width: 100%;
+    margin-right: 15px;
+    font-family: "Proxima Nova", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 140%;
+    color:  #2b2929;
+    display: inline-block; 
+    vertical-align: middle;
+}
+
+.menu__item:hover .sub-menu{
+    display: block;
+}
+
+.menu__arrow {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+}
+
+.sub-menu {
+    background-color: #fff;
+    position: absolute;
+    top: 8px;
+    left: 300px;
+    max-width: 305px;
+    width: 100%;
+    min-height: 600px;
+    display: none;
+    font-family: "Proxima Nova", sans-serif;
+    font-size: 19px;
+    line-height: 211%;
+    color:#2b2929;
+    padding-top: 20px;
+}
+
+.sub-menu__item {
+    padding-left: 38px;
+}
+
+.sub-menu__item:hover {
+    background-color: #ffbc57;
+}
+.sub-menu__link {
+}
+
+.menu-divider {
+    background-color: #ffbc57;
+    width: 5px;
+    height: 600px;
+    position: absolute;
+    top: 8px;
+    left: 300px;
+    z-index: 5;
+}
+
+
+
+
+.product {
+    max-width: 250px;
+    height: 300px;
+    border-radius: 8px;
+    padding: 20px;
+    margin-left: 50px;
+    margin-top: 50px;
+    background: #fff url(../img/bed-background.svg)bottom /100% no-repeat;
+    position: relative;
+    /* z-index: 1; */
+}
+
+.product__info{
+    font-family: "Proxima Nova", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 140%;
+    white-space: nowrap;
+    max-height:20px ;
+}
+.product__title {
+    display: inline-block;
+    color: #2b2929;
+    margin-right: 130px;
+}
+.product__number {
+    display: inline-block;    
+    color:  #b1b1b1;
+
+}
+
+.product__image{
+    position:absolute;
+    top:0;
+    left:0;
+}
+
+.product__arrow{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
