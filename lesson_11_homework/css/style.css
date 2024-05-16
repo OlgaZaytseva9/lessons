@@ -1,0 +1,352 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');*/
+
+
+@import url(https://fonts.googleapis.com/css?family=Quicksand:300,regular,500,600,700);
+
+@import url("reset.css");
+
+
+
+.wrapper {
+    overflow: clip;
+    min-height: 100%;
+    background-color: #DDDBDE;
+}
+.box{
+    width: 80%;
+    min-height: 100%;
+    margin: 0 auto;
+    background-color:#CAD4DF;   
+}
+.header__title{
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+    padding: 50px;
+}
+.page__title{
+    font-size: 24px;
+    background-color:#656E77;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+.container {
+    padding: 50px;
+    background-color: #fff;
+    border: 1px solid #656E77;
+    display: inline-block;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    min-width: 250px;
+    vertical-align: top;
+}
+
+.container__title{
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.block {
+    width: 100px;
+    height: 100px;
+    background-color:#CAD4DF/*#656E77*/;
+    margin: 0 auto;
+}
+.block__item {
+    width:100px;
+    height: 100px;
+    background-color:#3B373B;
+}
+
+/*Translate*/
+.container--translate .block__item {
+    transform: translate(20px, 30px);
+}
+
+/*Scale*/
+.container--scale .block__item {
+    transform: scale(0.8);
+   } 
+/*Rotate*/
+.container--rotate .block__item {
+    transform: rotate(45deg);
+   } 
+.container--rotatex .block__item {
+    transform: rotatex(45deg);
+   } 
+.container--rotatey .block__item {
+    transform: rotatey(45deg);
+   } 
+/*Skew*/
+.container--skew .block__item {
+    transform: skew(10deg, 20deg);
+   } 
+.container--skewx .block__item {
+    transform: skewX(20deg);
+      } 
+.container--skewy .block__item {
+    transform: skewY(20deg);
+   } 
+   /*matrix*/
+.container--matrix .block__item {
+    transform: translate(20px, 20px) scale(0.7) rotate(45deg) skew(20deg);
+   } 
+   /*Origin*/
+.container--origin .block__item {
+    transform: rotate(30deg);
+    transform-origin: 0 50%;
+   } 
+   /*3D*/
+   /*Perspective*/
+
+   .container--perspective .block {
+    perspective: 100px;
+    perspective-origin: right;
+   } 
+   .container--perspective .block__item {
+    transform: rotateX(60deg);
+
+   } 
+   /*Translate3D*/
+
+   .container--translate3D .block {
+    perspective: 100px;
+   } 
+   .container--translate3D .block__item {
+    transform: translate3d(20px, 30px, -200px);
+
+   } 
+   /*Scale3D*/
+
+   .container--scale3D .block {
+    perspective: 300px;
+   } 
+   .container--scale3D .block__item {
+    transform: scale3D(0.5, 0.5, 5);
+
+   } 
+   /*Rotate3D*/
+
+   .container--rotate3D .block {
+    perspective: 200px;  
+   } 
+   .container--rotate3D .block__item {
+    transform: rotate3d(20, 20, 20, 90deg);
+   } 
+   /*Transform.style*/
+
+   .container--style .block {
+    perspective: 200px;
+    transform-style: preserve-3d;
+
+   } 
+   .container--style .block__item {
+    transform: rotate3d(10, 10, 10, 90deg);
+   } 
+   /*Backface-visibility*/
+
+   .container--backface .block {
+    perspective: 200px;  
+
+   } 
+   .container--backface .block__item {
+    color:#CAD4DF;
+    backface-visibility: visible;
+    transform: rotateY(140deg);
+   } 
+
+
+   /**/
+.card {
+    margin-bottom: 50px;
+
+}
+.card__body {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    perspective: 400px;
+   
+}
+.card__body img{
+    max-width: 100% ;
+    max-height: 100%;
+}
+
+.card__front,
+.card__back {
+    transition: all 0.3s;
+    
+}
+.card__front {
+    backface-visibility: hidden;
+    transform: rotateY(0deg);
+}
+
+.card__back {
+    position: absolute;
+    top:0;
+    left: 0;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+}
+  
+.card__body:hover .card__front{
+    transform: rotateY(-180deg);
+}
+.card__body:hover .card__back{
+    transform: rotateY(0deg);
+}
+
+/*Car*/
+.car {
+    width: 520px;
+    height: 260px;
+    background-color: #ffa;
+    margin: 0 auto;
+    position: relative;
+    font-size: 0;
+    white-space: nowrap;
+}
+.car__top {
+    background-color: red;
+    width: 300px;
+    height: 60px;
+    border-radius: 300px 400px 0 0 ;
+    /* border-radius: 12% 88% 0% 100% / 96% 76% 24% 4%  ; */
+    position: absolute;
+    top: 20px;
+    left: 140px;
+
+}
+.car__bottom {
+    background-color: red;
+    width: 480px;
+    height: 120px;
+    border-radius: 400px 200px 0 0 ;
+    position: absolute;
+    top: 80px;
+    left: 20px;
+}
+.car__wheels{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #bbb7b7;
+    border: 20px solid black;
+}
+
+.car__wheels--front{
+    position: absolute;
+    top: 160px;
+    left: 80px;
+
+}
+.car__wheels--back{
+    position: absolute;
+    top: 160px;
+    left: 360px;
+}
+
+.car__windows {
+    background-color: rgb(117, 174, 220);
+    height: 40px;
+    border: 2px solid  #ade4fe;
+}
+.car__windows--front {
+    width: 120px;
+    border-radius: 400px 0 0 0 ;
+    position: absolute;
+    top: 40px;
+    left: 160px;
+}
+.car__windows--back {
+    width: 100px;
+    border-radius: 0 500px  0 0 ;
+    position: absolute;
+    top: 40px;
+    left: 320px;
+}
+.car__lights {
+    border-radius: 50%;
+    border: 2px solid  #ade4fe;
+}
+
+.car__lights--yellow {
+    width: 30px;
+    height: 30px;
+    background-color: yellow;
+
+}
+.car__lights--orange {
+    width: 20px;
+    height: 20px;
+    background-color: orange;
+}
+
+.car__lights--front.car__lights--yellow  {
+    position: absolute;
+    top: 120px;
+    left: 30px;
+}
+.car__lights--front.car__lights--orange  {
+    position: absolute;
+    top: 130px;
+    left: 40px;
+}
+
+.car__lights--back.car__lights--yellow  {
+    position: absolute;
+    top: 140px;
+    left: 470px;
+}
+.car__lights--back.car__lights--orange  {
+    position: absolute;
+    top: 150px;
+    left: 480px;
+}
+
+.car__handle {
+    background-color: #ade4fe;
+    width: 20px;
+    height: 10px;
+    border-radius: 5px;
+    position: absolute;
+    top: 100px;
+    left: 240px;
+}
+
+.car__curve{
+    border-top: 5px solid  #ade4fe;
+    border-radius: 50% 50% 0 0;
+    background-color: transparent;
+    width: 100px;
+    height: 110px;  
+}
+.car__curve--front{
+    position: absolute;
+    top: 140px;
+    left: 70px; 
+}
+.car__curve--back{
+    position: absolute;
+    top: 140px;
+    left: 350px; 
+}
+
+.car__line {
+    background-color: #ade4fe;
+}
+.car__line--horizontal {
+    width: 180px;
+    height: 2px;
+    position: absolute;
+    top: 180px;
+    left: 170px; 
+}
+.car__line--vertical {
+    width: 2px;
+    height: 100px;
+    position: absolute;
+    top: 80px;
+    left: 278px;
+}
