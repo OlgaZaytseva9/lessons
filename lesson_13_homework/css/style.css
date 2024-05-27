@@ -325,8 +325,26 @@
 
 /**//*MOST-POPULAR*//**//**/
 .most-popular {
+    margin-bottom: 80px;
 }
+.most-popular .section-title {
+    margin-right: 30px;
+}
+
+
 .section-title {
+}
+.section__link{ font-family: var(--font-family);
+font-weight: 600;
+font-size: 19px;
+line-height: 126%;
+color: #ffbc57;
+background: url(../img/most-popular-products/arrow-link.svg) right 0 top 0 no-repeat;
+background-size: 24px;
+padding-right: 34px;
+display: inline-block;
+vertical-align: middle;
+
 }
 .most-popular__products {
     display: flex;
@@ -428,4 +446,19 @@
 .basket-icon {
 }
 .basket-icon--small-distance {
+}
+.promotions {
+}
+.section-title {
+}
+.section__link {
+}
+.promotions__products {
+    display: flex;
+    justify-content: space-between;
+}
+.promotions__photo {
+    border-radius: 8px;
+    width: 410px;
+    height: 280px;
 }
